@@ -1,9 +1,8 @@
-*/fsh-generated
-*/input-cache
-*/output
-*/temp
-*/template
-*/_preprocessed
-*/_genonce*
-*/_updatePublisher*
-*.jar
+igs/*/fsh-generated
+igs/*/input-cache
+igs/*/output
+igs/*/temp
+igs/*/template
+igs/*/_preprocessed
+igs/*/_genonce*
+igs/*/_updatePublisher*
