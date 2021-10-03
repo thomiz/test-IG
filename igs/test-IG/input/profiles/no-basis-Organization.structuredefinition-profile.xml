@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Organization" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2020-04-22T10:49:58.004+00:00" />
+  </meta>
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+  <version value="2.0.15" />
+  <name value="NoBasisOrganization" />
+  <title value="no-basis-Organization" />
+  <status value="active" />
+  <date value="2019-05-20" />
+  <description value="Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.identifier:ENH">
+      <path value="Organization.identifier" />
+      <sliceName value="ENH" />
+      <short value="Organisasjonsnummer from Enhetsregisteret" />
+      <alias value="organisasjonsnummer" />
+      <alias value="organization number" />
+    </element>
+    <element id="Organization.identifier:ENH.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.101" />
+    </element>
+    <element id="Organization.identifier:ENH.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:RSH">
+      <path value="Organization.identifier" />
+      <sliceName value="RSH" />
+      <short value="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
+    </element>
+    <element id="Organization.identifier:RSH.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.102" />
+    </element>
+    <element id="Organization.identifier:RSH.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="no-basis provides two commonly used slices to indicate Organization.type. Both ValueSets are used in the Norweian realm and is currently maintained at Volven.no: &#xD;&#xA;- Organisatorisk nivå (OID=8628)&#xD;&#xA;- Organisatorisk betegnelse (OID=8624)&#xD;&#xA;&#xD;&#xA;The kind(s) of organization that this is." />
+    </element>
+    <element id="Organization.type:organisatoriskNiva">
+      <path value="Organization.type" />
+      <sliceName value="organisatoriskNiva" />
+      <short value="Organisatorisk nivå" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+      </binding>
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse">
+      <path value="Organization.type" />
+      <sliceName value="organisatoriskBetegnelse" />
+      <short value="Organisatorisk betegnelse" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8624" />
+      </binding>
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8624" />
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
+    <element id="Organization.contact.address">
+      <path value="Organization.contact.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <definition value="Technical endpoints providing access to services operated for the organization.&#xD;&#xA;&#xD;&#xA;no-basis don't use this element to reference endpoints registered in the Norwegian Address register (endpoints connected to a kommunikasjonspart in tjenestebasert adressering). Endpoints registered in the Norwegian Address register should only be referenced through a kommunikasjonspart-Organization resource." />
+    </element>
+  </differential>
+</StructureDefinition>

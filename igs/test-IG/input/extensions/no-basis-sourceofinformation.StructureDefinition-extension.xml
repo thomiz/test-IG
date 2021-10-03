@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-sourceofinformation" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
+  <version value="2.0.3" />
+  <name value="NoBasisSourceofinformation" />
+  <title value="no-basis-sourceofinformation" />
+  <status value="active" />
+  <date value="2019-09-20" />
+  <description value="Part of norwegian KI standard." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="extension" />
+    <expression value="AllergyIntolerance" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Source of information for Allergy intolerance" />
+      <definition value="Extention to support national KI standard." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:source">
+      <path value="Extension.extension" />
+      <sliceName value="source" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:source.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="source" />
+    </element>
+    <element id="Extension.extension:source.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:source.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7498" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

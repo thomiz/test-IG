@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-HealthcareService" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService" />
+  <version value="2.0.17" />
+  <name value="NoBasisHealthcareService" />
+  <title value="no-basis-HealthcareService" />
+  <status value="active" />
+  <date value="2019-05-20" />
+  <description value="Basisprofil for Norwegian Healthcare Service information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare Services. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The typical use-case is to include information regarding what Healthcare related services, support functions or activities provided by an Organization or awailable at a Location." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="HealthcareService" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="HealthcareService">
+      <path value="HealthcareService" />
+      <definition value="The details of a healthcare service available at a location. Should only be used for clinical healthcareservices offered by a PractitionerRole or by an Organization." />
+    </element>
+    <element id="HealthcareService.identifier">
+      <path value="HealthcareService.identifier" />
+      <mustSupport value="false" />
+    </element>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <definition value="The organization that provides this healthcare service.&#xD;&#xA;&#xD;&#xA;no-basis recommends the use of logical reference to an organization using ENH or RSH. To describe a top level organization. Departments within an organization could use a different reference scheme defined by the organization." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+      <constraint>
+        <key value="no-basis-providedBy-identifier" />
+        <severity value="warning" />
+        <human value="no-basis recommends the use of logical references by ENH or RESH identifiers. If providedBy exists, identifiers should exist." />
+        <expression value="$this.exists(identifier.exists())" />
+      </constraint>
+    </element>
+    <element id="HealthcareService.providedBy.identifier">
+      <path value="HealthcareService.providedBy.identifier" />
+      <short value="The logical reference of organization that provides this healthcare service." />
+      <definition value="no-basis recommends the use of logical reference to an organization using ENH or RSH. To describe a top level organization. Departments within an organization could use a different reference scheme defined by the organization.&#xD;&#xA;&#xD;&#xA;no-basis recommends if an identifier is provided the identifier type or system should be provided." />
+    </element>
+    <element id="HealthcareService.providedBy.identifier.system">
+      <path value="HealthcareService.providedBy.identifier.system" />
+      <constraint>
+        <key value="no-basis-identifier-system" />
+        <severity value="warning" />
+        <human value="no-basis recommends the use of urn:oid:2.16.578.1.12.4.1.4.101 (ENH) or urn:oid:2.16.578.1.12.4.1.4.102 (RESH) for identifier.system" />
+        <expression value="$this.exists(value = 'urn:oid:2.16.578.1.12.4.1.4.101' or value = 'urn:oid:2.16.578.1.12.4.1.4.102')" />
+      </constraint>
+    </element>
+    <element id="HealthcareService.category">
+      <path value="HealthcareService.category" />
+      <short value="HealthcareService category" />
+      <definition value="Example of category. Helsevirksomhet type (OID=9040), identifies the virksomhetstype used in Adresseregisteret. This element is usually not necessary to describe the HealthcareService adequately." />
+      <alias value="virksomhetstype" />
+      <binding>
+        <strength value="example" />
+        <description value="virksomhetstype 9040" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.9040" />
+      </binding>
+    </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <definition value="no-basis: This element is usually not necessary to describe the HealthcareService adequately. Further coding can be used when common set of SNOMED codes are agreed for healthc care service types.&#xD;&#xA;&#xD;&#xA;The specific type of service that may be delivered or performed." />
+    </element>
+    <element id="HealthcareService.specialty">
+      <path value="HealthcareService.specialty" />
+      <definition value="no-basis: Helsehjelpområde is given by the specialty element, preferred coding includes 8655 and 8654 codesystems. Type and category is usually not necessary to describe the HealthcareService adequately.&#xD;&#xA;&#xD;&#xA;The specific type defined in a codesystem allowed included in the valueset." />
+      <alias value="helsehjelpsområde" />
+    </element>
+    <element id="HealthcareService.specialty.coding">
+      <path value="HealthcareService.specialty.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <description value="Two possible codings are given for the type element" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.specialty.coding:8655">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8655" />
+      <short value="Code describing the Helsehjelpområde" />
+      <definition value="no-basis: Helsehjelpsområde (OID=8655) used to code the kind of clinical service the organization offers the patients through this HealthcareService&#xD;&#xA;Also use Klinisk/medisinsk service (OID=8654)?" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Helsehjelpsområde" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8655" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8655.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <short value="Identity of the 8655 codesystem" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8655" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8655.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8654">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8654" />
+      <definition value="Klinisk/medisinsk service (OID=8654)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Klinisk/medisinsk service" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8654" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8654.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8654" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8654.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:9151">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="9151" />
+      <definition value="IPLOS tjenestetype (OID=9151)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="IPLOS tjenestetype" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.9151" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:9151.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9151" />
+    </element>
+    <element id="HealthcareService.specialty.coding:9151.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8451">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8451" />
+      <definition value="Fagområde (OID=8451)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Fagområde" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8451" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8451.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <definition value="The identification of the Fagområde (OID=8451) code system." />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8451" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8451.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.location">
+      <path value="HealthcareService.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
+      </type>
+    </element>
+    <element id="HealthcareService.endpoint">
+      <path value="HealthcareService.endpoint" />
+      <definition value="no-basis: In Norway endpoints for communication should be connected to a kommunikasjonspart-Organization identified with HERid and collected from the Norwegian Address register. Endpoints not registered in the Norwegian Address register can use other schemes of connecting endpoints to Organizations, PractitionerRole or HealthcareService.&#xD;&#xA;&#xD;&#xA;Technical endpoints providing access to services operated for the specific healthcare services defined at this resource." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint" />
+      </type>
+      <mustSupport value="false" />
+    </element>
+  </differential>
+</StructureDefinition>
