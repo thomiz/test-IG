@@ -1,31 +1,25 @@
 ﻿testfsh : Validation Results
 =========================================
 
-err = 1, warn = 2, info = 0
+err = 1, warn = 3, info = 0
 IG Publisher Version: 1.1.97
-Generated Wed Jan 26 19:47:10 UTC 2022. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.1 (canonical = http://hl7.no/test)
- Build Errors : 16 / 1 / 0
+Generated Wed Jan 26 20:09:46 UTC 2022. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.1 (canonical = http://hl7.no/test)
+ Build Errors : 9 / 1 / 0
  /github/workspace/igs/test-fsh/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh : 0 / 1 / 1
- /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel : 0 / 0 / 1
+ /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[22].value: Supressed messages file not found
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PlanDefinition/PlanDefinisjonEksempel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 95, column 6: The link 'index.html' for "Home" cannot be resolved
 ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Home" cannot be resolved
 ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.html#/html/body/div/div/div/p/a at Line 203, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Home" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Home" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 93, column 6: The link 'index.html' for "Home" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.json.html#/html/body/div/div/div/p/a at Line 299, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.ttl.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/igs/test-fsh/output/PlanDefinition-PlanDefinisjonEksempel.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/igs/test-fsh/output/artifacts.html#/html/body/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21: The link 'index.html' for "Specification" cannot be resolved
-ERROR: /github/workspace/igs/test-fsh/output/toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 91, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: /github/workspace/igs/test-fsh/output/index.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/igs/test-fsh/output/toc.html#/html/body/div/div/div/p/a at Line 154, column 28: The link '' for "" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh.json ==
 WARNING: ImplementationGuide/hl7.fhir.no.test-fsh: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel.json ==
+WARNING: PlanDefinition/PlanDefinisjonEksempel: PlanDefinition.action[0].action[0].code[0].coding[0]: The display "Glucose measurement (procedure)" is not a valid display for the code {http://snomed.info/sct}33747003 - should be one of ['Glucose measurement, blood', 'Blood sugar level', 'BS - Blood glucose level', 'Glucose measurement, blood (procedure)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#33747003'
