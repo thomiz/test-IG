@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hl7.fhir.no.test-fsh",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh",
+    "version": "0.0.1",
+    "name": "testfsh"
+  },
+  {
+    "id": "PlanDefinisjonEksempel",
+    "type": "PlanDefinition",
+    "url": "http://hl7.no/test/PlanDefinition/PlanDefinisjonEksempel",
+    "version": "0.0.1",
+    "name": "PlanDefinitionExample"
+  }
+]
