@@ -1,5 +1,5 @@
 Profile: DerivedPerson
-Parent: NoBasisPerson
+Parent: no-basis-Person
 Id: derived-Person
 Title: "derived-Person"
 Description: """Derived person from no-basis-Person for Norwegian Person information."""
