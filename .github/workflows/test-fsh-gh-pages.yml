@@ -34,11 +34,7 @@ jobs:
         with:
           path: |
             igs/${{ env.IG }}/input-cache
-          key: ig-publisher-input-cache    
-
-      # NPM and no-basis package
-      - name: NPM install no-basis
-        run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1          
+          key: ig-publisher-input-cache     
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
