@@ -39,6 +39,9 @@ jobs:
             igs/${{ env.IG }}/input-cache
           key: ig-publisher-input-cache     
 
+      - name: Downgrade npm version
+        run: npm install -g npm@6.14.4
+
       # Get NPM version
       - name: NPM version
         run: npm -v
