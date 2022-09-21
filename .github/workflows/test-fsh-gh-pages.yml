@@ -52,7 +52,7 @@ jobs:
         
       # NPM fhir core
       - name: NPM install fhir core
-        run: npm install http://hl7.org/fhir/R4/hl7.fhir.r4.core.tgz
+        run: npm install igs/snapshots/hl7.fhir.r4.core.tgz
       
       # NPM and no-basis package
       - name: NPM install no-basis
