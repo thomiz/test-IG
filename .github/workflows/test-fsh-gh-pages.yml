@@ -60,7 +60,7 @@ jobs:
 
       # Move packages to correct folder
       - name: Move fhir packages
-        run: mv /~/node-modules/*.* /~/.fhir/packages
+        run: mv ~/node-modules/*.* ~/.fhir/packages
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
