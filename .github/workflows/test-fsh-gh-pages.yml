@@ -41,6 +41,8 @@ jobs:
 
       # NPM and no-basis package
       - name: NPM install no-basis
+        run: npm -v
+        run: node -v
         run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.1.tgz
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
