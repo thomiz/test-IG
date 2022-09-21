@@ -39,11 +39,13 @@ jobs:
             igs/${{ env.IG }}/input-cache
           key: ig-publisher-input-cache     
 
-- name: NPM version
-  run: npm -v
+      # Get NPM version
+      - name: NPM version
+        run: npm -v
   
-- name: node version
-  run: node -v
+      # Get node version
+      - name: node version
+        run: node -v
 
       # NPM and no-basis package
       - name: NPM install no-basis
