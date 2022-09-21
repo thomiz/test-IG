@@ -1,5 +1,5 @@
 Profile: DerivedPerson
-Parent: no-basis-Person
+Parent: https://simplifier.net/hl7norwayno-basis/nobasisperson/$downloadsnapshot?format=xml
 Id: derived-Person
 Title: "derived-Person"
 Description: """Derived person from no-basis-Person for Norwegian Person information."""
