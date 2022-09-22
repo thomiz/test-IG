@@ -58,9 +58,16 @@ jobs:
       - name: NPM install no-basis
         run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
 
+      # List directory
+      - name: LS command
+        run: |
+          ls -al /home/runner/work/test-IG/test-IG
+          ls -al /home/runner/work/test-IG
+          ls -al /home/runner/work/
+
       # Move packages to correct folder
       - name: Move fhir packages
-        run: mv ~/test-IG/test-IG/node-modules/*.* ~/.fhir/packages
+        run: mv /home/runner/work/test-IG/test-IGnode-modules/*.* /home/runner/work/test-IG/test-IG/.fhir/packages
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
