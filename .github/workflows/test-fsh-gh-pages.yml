@@ -75,7 +75,7 @@ jobs:
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
         run: |
-         apt-get -y install ruby-full build-essential zlib1g-dev nodejs libfontconfig1 libfreetype6
+         sudo apt-get -y install ruby-full build-essential zlib1g-dev nodejs libfontconfig1 libfreetype6
          npm install -g fsh-sushi
          gem install jekyll bundler
          wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
