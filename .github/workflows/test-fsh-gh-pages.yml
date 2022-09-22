@@ -67,7 +67,7 @@ jobs:
 
       # Move packages to correct folder
       - name: Move fhir packages
-        run: mv /home/runner/work/test-IG/test-IGnode-modules/*.* /home/runner/work/test-IG/test-IG/.fhir/packages
+        run: mv /home/runner/work/test-IG/test-IG/node-modules/*.* /home/runner/work/test-IG/test-IG/.fhir/packages
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
