@@ -45,8 +45,9 @@ jobs:
           pwd
           ls -al ~
           ls -al ../..
-          ls -al ../../..
           ls -al /
+          ls -al /home
+          ls -al /github
 
       # NPM and no-basis package
       - name: NPM install no-basis
