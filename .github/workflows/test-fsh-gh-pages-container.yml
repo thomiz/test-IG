@@ -44,10 +44,9 @@ jobs:
         run: |
           pwd
           ls -al ~
-          ls -al ../..
+          ls -al /usr/bin/git
           ls -al /
-          ls -al /home/publisher
-          ls -al /github/home
+          ls -al /home/publisher/ig
 
       # NPM and no-basis package
       - name: NPM install no-basis
