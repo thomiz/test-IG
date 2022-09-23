@@ -17,7 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: docker://hl7fhir/ig-publisher-base:latest
-      volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
+      volumes: 
+        - /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
 
     steps:
       - uses: actions/checkout@v2
