@@ -40,15 +40,14 @@ jobs:
       #    path: |
       #      igs/${{ env.IG }}/input-cache
       #    key: ig-publisher-input-cache    
-      # NPM and no-basis package
-      - name: NPM install no-basis
-        run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
-
       # List directory
       - name: LS command
         run: |
-          ls -al ~/work/test-IG/test-IG
           ls -al ~
+
+      # NPM and no-basis package
+      - name: NPM install no-basis
+        run: npm install ../snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
