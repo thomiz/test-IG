@@ -43,7 +43,10 @@ jobs:
       # List directory
       - name: LS command
         run: |
+          pwd
           ls -al ~
+          ls -al ..
+          ls -al ../..
 
       # NPM and no-basis package
       - name: NPM install no-basis
