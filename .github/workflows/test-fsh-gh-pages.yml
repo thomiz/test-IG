@@ -83,9 +83,9 @@ jobs:
       # Builds the HTML page for the IG.
       - name: 🏃‍♂️ Run IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
-        volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
         with:
           args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini 
+          volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
 
       # Builds the HTML page for the IG.
       #- name: 🏃‍♂️ Run IG Publisher
