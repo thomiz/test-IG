@@ -7,9 +7,6 @@ on:
       - test-fsh/**
   workflow_dispatch:
 
-env:
-  IG: test-fsh
-
 # The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
@@ -19,10 +16,11 @@ jobs:
       image: docker://hl7fhir/ig-publisher-base:latest
       volumes: 
         - /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
-
+      env:
+        IG: test-fsh
     steps:
-      - uses: actions/checkout@v2
-
+      - name: checkout
+        uses: actions/checkout@v2
       # Persist the FHIR Package Cache between runners.
       # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
       #- name: 🗂️ Cache FHIR Packages
@@ -50,7 +48,7 @@ jobs:
 
       # NPM and no-basis package
       - name: NPM install no-basis
-        run: npm install ../snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
+        run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
