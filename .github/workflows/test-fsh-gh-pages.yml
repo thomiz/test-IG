@@ -80,13 +80,12 @@ jobs:
       #   npm install -g fsh-sushi
       #   gem install jekyll bundler
 
-      # Builds the HTML page for the IG using docker image
-      - name: 🏃‍♂️ Run IG Publisher 
-        uses: addnab/docker-run-action@v3
+      # Builds the HTML page for the IG.
+      - name: 🏃‍♂️ Run IG Publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
         with:
-          image: hl7fhir/ig-publisher-base:latest
-          options: -v /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
-          run: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini
+          args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini 
 
       # Builds the HTML page for the IG.
       #- name: 🏃‍♂️ Run IG Publisher
