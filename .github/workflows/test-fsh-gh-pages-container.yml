@@ -1,4 +1,4 @@
-name: test-fsh-gh-pages
+name: test-fsh-gh-pages-container
 
 on:
   push:
