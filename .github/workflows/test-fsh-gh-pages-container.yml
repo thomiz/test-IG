@@ -21,7 +21,7 @@ jobs:
         IG: test-fsh
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # Persist the FHIR Package Cache between runners.
       # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
       #- name: 🗂️ Cache FHIR Packages
