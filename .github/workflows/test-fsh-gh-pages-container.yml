@@ -46,8 +46,8 @@ jobs:
           ls -al ~
           ls -al ../..
           ls -al /
-          ls -al /home
-          ls -al /github
+          ls -al /home/publisher
+          ls -al /github/home
 
       # NPM and no-basis package
       - name: NPM install no-basis
