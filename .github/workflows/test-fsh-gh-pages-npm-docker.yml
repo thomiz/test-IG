@@ -57,17 +57,17 @@ jobs:
       - name: List directory node_modules
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: ls -al node_modules
+          args: ls -al /.fhir/packages
 
       - name: Move node_modules
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: mv node_modules/*.* /.fhir/packages
+          args: mv node_modules/* /.fhir/packages
 
-      - name: List directory
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ls -al
+      #- name: List directory
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: ls -al
 
       # Builds the HTML page for the IG.
       - name: 🏃‍♂️ Run IG Publisher
