@@ -62,7 +62,7 @@ jobs:
       - name: make directories .fhir/packages
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: mkdir -p /.fhir/packages
+          args: sudo mkdir -p /.fhir/packages
       
       - name: copy node_modules
         uses: docker://hl7fhir/ig-publisher-base:latest
