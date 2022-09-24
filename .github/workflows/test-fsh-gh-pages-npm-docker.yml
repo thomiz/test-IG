@@ -54,6 +54,11 @@ jobs:
         with:
          args: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
 
+      - name: List directory
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ls -al
+
       # Builds the HTML page for the IG.
       - name: 🏃‍♂️ Run IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
