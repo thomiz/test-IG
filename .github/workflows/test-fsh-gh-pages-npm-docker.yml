@@ -54,15 +54,15 @@ jobs:
         with:
          args: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
 
-      - name: List directory node_modules
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ls -al /.fhir/packages
+      #- name: List directory node_modules
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: ls -al /.fhir/packages
 
       - name: Move node_modules
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: mv node_modules/* /.fhir/packages
+          args: mkdir -p .fhir/packages && cp -r -v node_modules/* .fhir/packages
 
       #- name: List directory
       #  uses: docker://hl7fhir/ig-publisher-base:latest
