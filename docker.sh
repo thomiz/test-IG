@@ -11,3 +11,5 @@ echo "Copy"
 cp -r /github/workspace/igs/snapshots/* /home/publisher/.fhir/packages
 echo "home publisher .fhir packages"
 ls -al /home/publisher/.fhir/packages
+echo "Run publisher: java -jar publisher.jar publisher -ig igs/$1/ig.ini"
+java -jar publisher.jar publisher -ig igs/$1/ig.ini
