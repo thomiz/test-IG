@@ -97,7 +97,7 @@ jobs:
       - name: 🏃‍♂️ Run IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini -packages igs/snapshots
+          args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini
 
       # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
       # This will overwrite the currently published HTML page.
