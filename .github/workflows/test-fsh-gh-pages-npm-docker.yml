@@ -64,6 +64,11 @@ jobs:
       #  with:
       #    args: ls -al
 
+      - name: run the docker script
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./docker.sh
+
       - name: make directories .fhir/packages
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
