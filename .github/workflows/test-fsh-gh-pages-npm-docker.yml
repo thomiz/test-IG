@@ -64,6 +64,11 @@ jobs:
       #  with:
       #    args: ls -al
 
+      - name: make script executable
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: sudo chmod 774 docker.sh
+
       - name: run the docker script
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
