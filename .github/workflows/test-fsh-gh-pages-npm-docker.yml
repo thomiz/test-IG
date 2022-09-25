@@ -74,15 +74,15 @@ jobs:
         with:
           args: ./docker.sh
 
-      - name: make directories .fhir/packages
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: mkdir -p /github/workspace/.fhir/packages
+      #- name: make directories .fhir/packages
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: mkdir -p /github/workspace/.fhir/packages
       
       - name: copy snapshots
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: cp -r -v /github/workspace/igs/snapshots/* /github/workspace/.fhir/packages
+          args: cp -r -v /github/workspace/igs/snapshots/*.* /github/workspace/.fhir/packages
 #      - name: copy node_modules
 #        uses: docker://hl7fhir/ig-publisher-base:latest
 #        with:
