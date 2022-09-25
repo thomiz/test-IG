@@ -44,35 +44,39 @@ jobs:
       - name: 📥 Download IG Publisher
         run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 
-      - name: Get fhire core r4
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-         args: npm install igs/snapshots/hl7.fhir.r4.core.tgz
+      #- name: Get fhire core r4
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #   args: npm install igs/snapshots/hl7.fhir.r4.core.tgz
 
-      - name: Get no-basis
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-         args: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
+      #- name: Get no-basis
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #   args: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
 
       #- name: Where am I
       #  uses: docker://hl7fhir/ig-publisher-base:latest
       #  with:
       #    args: pwd
 
-      - name: List directory ..
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ls -al
+      #- name: List directory ..
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: ls -al
 
       - name: make directories .fhir/packages
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: mkdir -p /home/publisher/.fhir/packages
+          args: mkdir -p /github/workspace/.fhir/packages
       
-      - name: copy node_modules
+      - name: copy snapshots
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: cp -r -v /github/workspace/node_modules/* /home/publisher/.fhir/packages
+          args: cp -r -v /github/workspace/igs/snapshots/* /github/workspace/.fhir/packages
+#      - name: copy node_modules
+#        uses: docker://hl7fhir/ig-publisher-base:latest
+#        with:
+#          args: cp -r -v /github/workspace/node_modules/* /home/publisher/.fhir/packages
 
       #- name: List directory
       #  uses: docker://hl7fhir/ig-publisher-base:latest
