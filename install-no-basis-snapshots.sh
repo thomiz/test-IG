@@ -3,12 +3,16 @@ echo "NPM install fhir r4 core"
 npm install /github/workspace/igs/snapshots/hl7.fhir.r4.core.tgz
 echo "NPM install fhir no-basis212beta"
 npm install /github/workspace/igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
-echo "List node_modules directories"
+echo "List node_modules directory"
 ls -al /github/workspace/node_modules
-ls -al /home/publisher/node_modules
-echo "Copy no-basis"
+echo "List node_modules hl7.fhir.no.basis directory"
+ls -al /gihub/workspace/node_modules/hl7.fhir.no.basis/
+echo "Make home publisher .fhir packages no-basis"
 mkdir -p /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
-cp -r /gihub/workspace/node_modules/hl7.fhir.no.basis/*.* /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
+ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
+echo "Copy no-basis"
+cp -r /gihub/workspace/node_modules/hl7.fhir.no.basis/* /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
+ls -al /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
 echo "Copy a bogus ImplementationGuide resource instance to the package catalog for SUSHI to run (it needs to have the correct version in version element)"
 cp igs/snapshots/ImplementationGuide-hl7.fhir.no.basis.json /home/publisher/.fhir/packages/hl7.fhir.no.basis#2.1.2-beta/package
 echo "get latest publisher"
