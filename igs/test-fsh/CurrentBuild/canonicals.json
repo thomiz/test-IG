@@ -12,5 +12,12 @@
     "url": "http://hl7.no/test/PlanDefinition/PlanDefinisjonEksempel",
     "version": "0.0.1",
     "name": "PlanDefinitionExample"
+  },
+  {
+    "id": "derived-Person",
+    "type": "StructureDefinition",
+    "url": "http://hl7.no/test/StructureDefinition/derived-Person",
+    "version": "0.0.1",
+    "name": "DerivedPerson"
   }
 ]
