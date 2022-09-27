@@ -7,9 +7,6 @@ on:
       - test-fsh/**
   workflow_dispatch:
 
-env:
-  IG: test-fsh
-
 # The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
@@ -17,11 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: docker://hl7fhir/ig-publisher-base:latest
-      volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
-
+      volumes: 
+        - /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
+      options: --user root
+      env:
+        IG: test-fsh
     steps:
-      - uses: actions/checkout@v2
-
+      - name: checkout
+        uses: actions/checkout@v3
       # Persist the FHIR Package Cache between runners.
       # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
       #- name: 🗂️ Cache FHIR Packages
@@ -39,15 +39,18 @@ jobs:
       #    path: |
       #      igs/${{ env.IG }}/input-cache
       #    key: ig-publisher-input-cache    
-      # NPM and no-basis package
-      - name: NPM install no-basis
-        run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
-
       # List directory
       - name: LS command
         run: |
-          ls -al ~/work/test-IG/test-IG
+          pwd
           ls -al ~
+          ls -al /usr/bin/git
+          ls -al /
+          ls -al /home/publisher/ig
+
+      # NPM and no-basis package
+      - name: NPM install no-basis
+        run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz     
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher

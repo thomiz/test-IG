@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+            node-version: 16
 
       # Persist the FHIR Package Cache between runners.
       # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
@@ -34,21 +37,61 @@ jobs:
         with:
           path: |
             igs/${{ env.IG }}/input-cache
-          key: ig-publisher-input-cache    
+          key: ig-publisher-input-cache     
 
+      - name: Downgrade npm version
+        run: npm install -g npm@6.14.4
+
+      # Get NPM version
+      - name: NPM version
+        run: npm -v
+  
+      # Get node version
+      - name: node version
+        run: node -v
+        
+      # NPM fhir core
+      - name: NPM install fhir core
+        run: npm install igs/snapshots/hl7.fhir.r4.core.tgz
+      
       # NPM and no-basis package
       - name: NPM install no-basis
-        run: npm --registry https://packages.simplifier.net install hl7.fhir.no.basis@2.1.1          
+        run: npm install igs/snapshots/hl7.fhir.no.basis-2.1.2-beta.tgz
+
+      # List directory
+      #- name: LS command
+      #  run: |
+      #    ls -al /home/runner/work/test-IG/test-IG
+      #    ls -al /home/runner/work/test-IG
+      #    ls -al /home/runner/work/
+
+      # Move packages to correct folder
+      #- name: Move fhir packages
+      #  run: |
+      #   mkdir /home/runner/work/test-IG/test-IG/.fhir
+      #   mkdir /home/runner/work/test-IG/test-IG/.fhir/packages
+      #   mv /home/runner/work/test-IG/test-IG/node_modules/*.* /home/runner/work/test-IG/test-IG/.fhir/packages
 
       # Downloads the newest version of the IG Publisher, this could probable be cached.
       - name: 📥 Download IG Publisher
         run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+      #  |
+      #   sudo apt-get -y install ruby-full build-essential zlib1g-dev nodejs libfontconfig1 libfreetype6
+      #   npm install -g fsh-sushi
+      #   gem install jekyll bundler
 
       # Builds the HTML page for the IG.
       - name: 🏃‍♂️ Run IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini
+          args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini 
+          volumes: /home/runner/work/test-IG/test-IG/node_modules:/.fhir/packages
+
+      # Builds the HTML page for the IG.
+      #- name: 🏃‍♂️ Run IG Publisher
+      #  uses: docker://hl7fhir/ig-publisher-base:latest
+      #  with:
+      #    args: java -jar publisher.jar publisher -ig igs/${{ env.IG }}/ig.ini
 
       # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
       # This will overwrite the currently published HTML page.
