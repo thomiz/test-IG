@@ -1,10 +1,6 @@
 name: test-fsh-gh-pages-npm-docker
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - test-fsh/**
   workflow_dispatch:
 
 env:
