@@ -1,4 +1,4 @@
-name: test-fsh-gh-pages-npm-docker
+name: test-fsh-dont-copy-IG
 
 on:
   workflow_dispatch:
