@@ -3,7 +3,7 @@
   "name": "testfsh",
   "package-id": "hl7.fhir.no.test-fsh",
   "ig-ver": "0.0.1",
-  "date": "Wed, 28 Sep, 2022 05:17:42 +0000",
+  "date": "Wed, 28 Sep, 2022 07:07:25 +0000",
   "errs": 1,
   "warnings": 5,
   "hints": 2,
