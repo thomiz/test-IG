@@ -9,7 +9,7 @@
   "version": "0.0.1",
   "name": "testfsh",
   "status": "draft",
-  "date": "2022-09-27T18:40:25+00:00",
+  "date": "2022-09-28T05:17:42+00:00",
   "jurisdiction": [
     {
       "coding": [
@@ -41,7 +41,7 @@
     },
     {
       "id": "hl7_fhir_no_basis",
-      "uri": "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.basis",
+      "uri": "http://hl7.no/fhir/",
       "packageId": "hl7.fhir.no.basis",
       "version": "2.1.2-beta"
     }

@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.0.1"];
   fhir:ImplementationGuide.name [ fhir:value "testfsh"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-09-27T18:40:25+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-28T05:17:42+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -54,8 +54,8 @@
      fhir:index 2;
      fhir:Element.id [ fhir:value "hl7_fhir_no_basis" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.basis";
-       fhir:link <http://hl7.no/fhir/ImplementationGuide/hl7.fhir.no.basis>
+       fhir:value "http://hl7.no/fhir/";
+       fhir:link <http://hl7.no/fhir/>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.no.basis" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.2-beta" ]
