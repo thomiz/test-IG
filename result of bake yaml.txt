@@ -1,0 +1,142 @@
+Simplifier.net
+Search
+   
+PROJECT HL7 Norway no-basis
+Bake Pipeline beta
+Running package-duplicate-2 bake pipeline actions
+Initializing...
+
+Starting bake...
+
+Starting: move-active-resources
+
+Running: category (filter)
+
+Running: filter (filter)
+
+Running: move (file-action)
+
+Running: couplingaction (bucket-action)
+
+Starting: move-examples
+
+Running: category (filter)
+
+Running: move (file-action)
+
+Running: couplingaction (bucket-action)
+
+Starting: sushi
+
+Running: files (filter)
+
+Running: sushi (bucket-action)
+
+Running: move (file-action)
+
+Running: couplingaction (bucket-action)
+
+Starting: yaml-gen
+
+Running: files (filter)
+
+Running: yamlgen (file-action)
+
+Running: move (file-action)
+
+Running: couplingaction (bucket-action)
+
+Starting: to-json
+
+Running: couplingaction (bucket-action)
+
+Running: category (filter)
+
+Running: transform (file-action)
+
+Starting: manifest
+
+Running: files (filter)
+
+Running: move (file-action)
+
+Starting: index-file
+
+Running: couplingaction (bucket-action)
+
+Running: files (filter)
+
+Running: create-package-index (bucket-action)
+
+Running: move (file-action)
+
+Bake is ready.
+
+File: package/examples/no-basis-fodselsnummer.namingsystem.json
+
+File: package/examples/no-basis-dnummer.namingsystem.json
+
+File: package/examples/no-basis-felleshjelpenummer.namingsystem.json
+
+File: package/examples/no-basis-helsepersonellnummer.namingsystem.json
+
+File: package/examples/no-basis-dufnummer.namingsystem.json
+
+File: package/examples/conceptmap-3401.json
+
+File: package/examples/Vital-signs-weight-v2.json
+
+File: package/examples/no-basis-bydelsnummer.namingsystem.json
+
+File: package/examples/no-basis-kommunenummer.namingsystem.json
+
+File: package/examples/no-basis-HealthcareService-example.json
+
+File: package/examples/no-basis-icpc-2.namingsystem.json
+
+File: package/examples/no-basis-Procedure-example.json
+
+File: package/examples/Vital-signs-weight.json
+
+File: package/examples/no-basis-Organization-example.json
+
+File: package/examples/no-basis-Patient-Jannice-Søreng.json
+
+File: package/examples/no-basis-Patient-Espen-Eksempel.json
+
+File: package/examples/no-basis-Practitioner-example.json
+
+File: package/examples/no-basis-RelatedPerson-Ærlend-Sørgård.json
+
+File: package/examples/no-basis-RelatedPerson-Solid-æresdoktor.json
+
+File: package/examples/no-basis-RelatedPerson-Ærlend-Sørgård-person-extension.json
+
+File: package/.index.json
+
+
+About
+About
+About Firely
+Contact
+Information
+Documentation
+Terms
+Privacy
+Features
+Pricing
+Follow us
+Github
+Twitter
+Vimeo
+Links
+FHIR DevDays
+FHIR specification R4
+FHIR specification STU3
+FHIR DSTU 2
+
+SIMPLIFIER.NET version 29.3.9.0
+
+Copyright © 2015-2022 Firely
+
+HL7® and FHIR® are the registered trademarks of Health Level Seven International
