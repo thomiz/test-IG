@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>testfsh</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh</pre></div>"
   },
   "url": "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "testfsh",
   "status": "draft",
-  "date": "2022-09-28T07:07:25+00:00",
+  "date": "2022-10-05T12:07:20+00:00",
   "jurisdiction": [
     {
       "coding": [
@@ -41,9 +41,9 @@
     },
     {
       "id": "hl7_fhir_no_basis",
-      "uri": "http://hl7.no/fhir/",
+      "uri": "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
       "packageId": "hl7.fhir.no.basis",
-      "version": "2.1.2-beta"
+      "version": "2.1.2-delta"
     }
   ],
   "definition": {
