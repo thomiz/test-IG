@@ -1,0 +1,23 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+canonical: http://johnsbu.no/test/ig
+name: TestIg
+fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: johnsbu.family.no.test.ig
+status: draft
+version: 0.0.1-alpha
+releaseLabel: ci-build
+copyrightYear: 2023+
+jurisdiction: urn:iso:std:iso:3166#NO "Norway"
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Family: 
+    Johnsen: Johnsen.html
