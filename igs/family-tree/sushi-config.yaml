@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 canonical: http://johnsbu.no/test/ig
-name: TestIg
+name: Familytree
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
@@ -21,3 +21,4 @@ menu:
   Home: index.html
   Family: 
     Johnsen: Johnsen.html
+    Wiese: wiese-grenen.html
