@@ -1,0 +1,184 @@
+{
+  "date" : "Thu, 12 Oct, 2023 19:49:28 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh.json",
+      "size" : 1633,
+      "processes" : [
+        {
+          "activity" : "scan",
+          "start" : 79,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 79,
+          "length" : 108
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 80,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 188
+        },
+        {
+          "activity" : "validate",
+          "start" : 82,
+          "length" : 1483
+        },
+        {
+          "activity" : "generate1",
+          "start" : 84,
+          "length" : 145
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 158
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 237,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 237,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 244,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel.json",
+      "size" : 1684,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 79,
+          "length" : 20
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 79,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 79,
+          "length" : 65
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 84,
+          "length" : 329
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 84,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 16
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 237,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-derived-Person.json",
+      "size" : 1674,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 79,
+          "length" : 25
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 79,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 79,
+          "length" : 30
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 79,
+          "length" : 814
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 416
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 1982
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 84,
+          "length" : 431
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 3468
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 237,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 244,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

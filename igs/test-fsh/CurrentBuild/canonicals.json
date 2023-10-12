@@ -1,23 +1,23 @@
 [
   {
-    "id": "hl7.fhir.no.test-fsh",
-    "type": "ImplementationGuide",
-    "url": "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh",
-    "version": "0.0.3",
-    "name": "testfsh"
+    "id" : "hl7.fhir.no.test-fsh",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh",
+    "version" : "0.0.3",
+    "name" : "testfsh"
   },
   {
-    "id": "PlanDefinisjonEksempel",
-    "type": "PlanDefinition",
-    "url": "http://hl7.no/test/PlanDefinition/PlanDefinisjonEksempel",
-    "version": "0.0.3",
-    "name": "PlanDefinitionExample"
+    "id" : "PlanDefinisjonEksempel",
+    "type" : "PlanDefinition",
+    "url" : "http://hl7.no/test/PlanDefinition/PlanDefinisjonEksempel",
+    "version" : "0.0.3",
+    "name" : "PlanDefinitionExample"
   },
   {
-    "id": "derived-Person",
-    "type": "StructureDefinition",
-    "url": "http://hl7.no/test/StructureDefinition/derived-Person",
-    "version": "0.0.3",
-    "name": "DerivedPerson"
+    "id" : "derived-Person",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/test/StructureDefinition/derived-Person",
+    "version" : "0.0.3",
+    "name" : "DerivedPerson"
   }
 ]

@@ -1,8 +1,6 @@
 {
-  "version": "0.0.3",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221118125302",
-  "name": "hl7.fhir.no.test-fsh"
+  "version" : "0.0.3",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20231012194809",
+  "name" : "hl7.fhir.no.test-fsh"
 }
