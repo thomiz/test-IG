@@ -1,10 +1,16 @@
 {
   "package": "hl7.fhir.no.test-fsh",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
+    "Appointment": [
+      {
+        "url": "http://hl7.no/test/StructureDefinition/derived-Appointment",
+        "title": "derived-Appointment"
+      }
+    ],
     "Person": [
       {
         "url": "http://hl7.no/test/StructureDefinition/derived-Person",
@@ -13,6 +19,15 @@
     ]
   },
   "usage": {
+    "http://hl7.no/fhir/StructureDefinition/no-basis-group": [
+      "Appointment"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-partof": [
+      "Appointment"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service": [
+      "Appointment"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -27,6 +42,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

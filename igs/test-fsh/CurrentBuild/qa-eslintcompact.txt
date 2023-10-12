@@ -1,13 +1,19 @@
-﻿/github/workspace/igs/test-fsh/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh.json: line 1, col 11597, Warning - Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
+﻿/github/workspace/igs/test-fsh/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh.json: line 1, col 11965, Warning - Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (INVARIANT)
 /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel.json: line 1, col 487, Error - Wrong Display Name 'Blood glucose normal (finding)' for http://snomed.info/sct#166921001 - should be one of 5 choices: 'Blood glucose normal', 'Normoglycemic', 'Normoglycaemic', 'Blood glucose within reference range' or 'Blood glucose within reference range (finding)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#166921001' (CODEINVALID)
 /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel.json: line 1, col 761, Error - Wrong Display Name 'Glucose measurement (procedure)' for http://snomed.info/sct#33747003 - should be one of 4 choices: 'Glucose measurement, blood', 'Blood sugar level', 'BS - Blood glucose level' or 'Glucose measurement, blood (procedure)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#33747003' (CODEINVALID)
-/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person.json: line 1, col 45108, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person.json: line 1, col 60197, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 1, col 93209, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 1, col 95021, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person.json: line 1, col 43954, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person.json: line 1, col 58336, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 
 testfsh : Validation Results
 =========================================
 
-err = 3, warn = 7, info = 2
+err = 3, warn = 14, info = 4
 IG Publisher Version: 1.4.14
-Generated Thu Oct 12 19:52:14 UTC 2023. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.3 (canonical = http://hl7.no/test)
+Generated Thu Oct 12 20:40:39 UTC 2023. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.4 (canonical = http://hl7.no/test)

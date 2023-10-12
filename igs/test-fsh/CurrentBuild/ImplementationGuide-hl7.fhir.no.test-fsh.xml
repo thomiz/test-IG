@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>testfsh</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh</pre></div>
   </text>
   <url value="http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="testfsh"/>
   <status value="draft"/>
-  <date value="2023-10-12T19:49:28+00:00"/>
+  <date value="2023-10-12T20:40:14+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -39,7 +39,7 @@
   <dependsOn id="hl7_fhir_no_basis">
     <uri value="http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis"/>
     <packageId value="hl7.fhir.no.basis"/>
-    <version value="2.1.2"/>
+    <version value="2.2.0-alpha"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -429,6 +429,17 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/derived-Appointment"/>
+      </reference>
+      <name value="derived-Appointment"/>
+      <description value="Derived appointment profile testing a profile derived from no-basis-Appointment profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
