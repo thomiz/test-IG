@@ -6,5 +6,4 @@ Description: "Derived appointment profile testing a profile derived from no-basi
 * ^version = "2.0.0"
 * ^status = #draft
 * ^date = "2023-10-12"
-* appointmentType.coding contains
-  omsorgsNiva 1..1
+* appointmentType.coding[omsorgsNiva] 1..1
