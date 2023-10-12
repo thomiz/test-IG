@@ -2,7 +2,7 @@ Profile: DerivedPerson
 Parent: NoBasisPerson
 Id: derived-Person
 Title: "derived-Person"
-Description: """Derived person from no-basis-Person for Norwegian Person information."""
+Description: "Derived person from no-basis-Person for Norwegian Person information."
 * ^version = "2.0.0"
 * ^status = #draft
 * ^date = "2022-01-10"
