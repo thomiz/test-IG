@@ -9,9 +9,9 @@ FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.test-fsh
 status: draft
-version: 0.0.3
+version: 0.0.4
 dependencies: 
-    hl7.fhir.no.basis: 2.1.2
+    hl7.fhir.no.basis: 2.2.0-alpha
 releaseLabel: ci-build
 copyrightYear: 2021+
 jurisdiction: urn:iso:std:iso:3166#NO "Norway"

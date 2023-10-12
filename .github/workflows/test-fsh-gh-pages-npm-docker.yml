@@ -1,3 +1,6 @@
+# Script for building test-fsh projects
+# Loads snapshot of no-basis manually (using install-no-basis-snapshots.sh script) into the virtual machine
+# Runs IG publisher using the manually installed no-basis package.
 name: test-fsh-gh-pages-npm-docker
 
 on:
