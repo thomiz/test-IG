@@ -1,7 +1,7 @@
 Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
 
 Instance: derivedAppointmentExample
-InstanceOf: derivedAppointment
+InstanceOf: DerivedAppointment
 Usage: #example
 * id = "derivedAppointmentExample"
 * status = #booked
