@@ -1,3 +1,5 @@
+Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
+
 Instance: derivedAppointmentExample
 InstanceOf: derivedAppointment
 Usage: #example

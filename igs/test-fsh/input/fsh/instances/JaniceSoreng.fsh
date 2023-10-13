@@ -1,3 +1,7 @@
+Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
+Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
+
 Instance: JanniceSoreng
 InstanceOf: NoBasisPatient
 Usage: #example
