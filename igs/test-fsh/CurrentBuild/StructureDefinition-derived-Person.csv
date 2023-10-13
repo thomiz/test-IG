@@ -39,7 +39,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Person.identifier","Person.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","A human identifier for this person","An identifier for this person. Should be at Fødselsnummer or D-nummer
+","A human identifier for this person","An identifier for this person. Should be a Fødselsnummer or D-nummer
 
 Identifier for a person within a particular scope. TNR is also allowed","","People are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the person. Examples are national person identifier and local identifier.","","","","","","","",,,,,"","value:system}
 ","",,"open","Person.identifier",0,*,"ele-1

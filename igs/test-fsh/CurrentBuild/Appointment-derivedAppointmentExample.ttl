@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/test/Appointment/derivedAppointmentExample> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "derivedAppointmentExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/test/StructureDefinition/derived-Appointment"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/test/StructureDefinition/derived-Appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"derivedAppointmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;derivedAppointmentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derived-Appointment.html\">derived-Appointment</a></p></div><p><b>status</b>: booked</p><p><b>appointmentType</b>: A routine check-up, such as an annual physical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0276.html\">appointmentReason</a>#CHECKUP; unknown#Ordinær)</span></p><p><b>description</b>: Discussion on the results of your recent MRI</p><p><b>start</b>: Aug 10, 2023, 9:00:00 AM</p><p><b>end</b>: Aug 10, 2023, 11:00:00 AM</p><p><b>comment</b>: Further expand on the results of the MRI and determine the next actions that may be appropriate.</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td><td><b>Required</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span>id: 15080050515</span></td><td>required</td><td>accepted</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:appointmentType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0276"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHECKUP" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.7617"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Ordinær" ]
+     ] )
+  ] ; # 
+  fhir:description [ fhir:v "Discussion on the results of your recent MRI"] ; # 
+  fhir:start [ fhir:v "2023-08-10T09:00:00Z"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2023-08-10T11:00:00Z"^^xsd:dateTime] ; # 
+  fhir:comment [ fhir:v "Further expand on the results of the MRI and determine the next actions that may be appropriate."] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "15080050515" ]
+       ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

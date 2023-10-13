@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>testfsh</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.0.4"] ; # 
+  fhir:version [ fhir:v "0.0.5"] ; # 
   fhir:name [ fhir:v "testfsh"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-12T20:40:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-13T05:20:00+00:00"^^xsd:dateTime] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -524,11 +524,37 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/test/Appointment/derivedAppointmentExample> ;
+         fhir:reference [ fhir:v "Appointment/derivedAppointmentExample" ]
+       ] ;
+       fhir:name [ fhir:v "derivedAppointmentExample" ] ;
+       fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
+       fhir:example [
+         fhir:v "http://hl7.no/test/StructureDefinition/derived-Appointment"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/test/StructureDefinition/derived-Appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.no/test/Patient/janniceSoreng> ;
+         fhir:reference [ fhir:v "Patient/janniceSoreng" ]
+       ] ;
+       fhir:name [ fhir:v "JanniceSoreng" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.no/test/PlanDefinition/PlanDefinisjonEksempel> ;
-         fhir:reference [ fhir:v "PlanDefinition/PlanDefinisjonEksempel" ]
+         fhir:link <http://hl7.no/test/PlanDefinition/planDefinisjonEksempel> ;
+         fhir:reference [ fhir:v "PlanDefinition/planDefinisjonEksempel" ]
        ] ;
        fhir:name [ fhir:v "Overvåke blodsukker" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]

@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>testfsh</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh</pre></div>
   </text>
   <url value="http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="testfsh"/>
   <status value="draft"/>
-  <date value="2023-10-12T20:40:14+00:00"/>
+  <date value="2023-10-13T05:20:00+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -453,10 +453,31 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/derivedAppointmentExample"/>
+      </reference>
+      <name value="derivedAppointmentExample"/>
+      <description value="Discussion on the results of your recent MRI"/>
+      <exampleCanonical value="http://hl7.no/test/StructureDefinition/derived-Appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/janniceSoreng"/>
+      </reference>
+      <name value="JanniceSoreng"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
-        <reference value="PlanDefinition/PlanDefinisjonEksempel"/>
+        <reference value="PlanDefinition/planDefinisjonEksempel"/>
       </reference>
       <name value="Overvåke blodsukker"/>
       <exampleBoolean value="true"/>

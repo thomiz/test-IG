@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>testfsh</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh</pre></div>"
   },
   "url" : "http://hl7.no/test/ImplementationGuide/hl7.fhir.no.test-fsh",
-  "version" : "0.0.4",
+  "version" : "0.0.5",
   "name" : "testfsh",
   "status" : "draft",
-  "date" : "2023-10-12T20:40:14+00:00",
+  "date" : "2023-10-13T05:20:00+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -606,10 +606,33 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/derivedAppointmentExample"
+      },
+      "name" : "derivedAppointmentExample",
+      "description" : "Discussion on the results of your recent MRI",
+      "exampleCanonical" : "http://hl7.no/test/StructureDefinition/derived-Appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/janniceSoreng"
+      },
+      "name" : "JanniceSoreng",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
-        "reference" : "PlanDefinition/PlanDefinisjonEksempel"
+        "reference" : "PlanDefinition/planDefinisjonEksempel"
       },
       "name" : "Overvåke blodsukker",
       "exampleBoolean" : true

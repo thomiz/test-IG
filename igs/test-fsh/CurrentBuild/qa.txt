@@ -1,18 +1,21 @@
 ﻿testfsh : Validation Results
 =========================================
 
-err = 3, warn = 14, info = 4
+err = 4, warn = 17, info = 10
 IG Publisher Version: 1.4.14
-Generated Thu Oct 12 20:40:39 UTC 2023. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.4 (canonical = http://hl7.no/test)
- Build Errors : 1 / 8 / 0
+Generated Fri Oct 13 05:20:26 UTC 2023. FHIR version 4.0.1 for hl7.fhir.no.test-fsh#0.0.5 (canonical = http://hl7.no/test)
+ Build Errors : 1 / 9 / 0
+ /github/workspace/igs/test-fsh/fsh-generated/resources/Appointment-derivedAppointmentExample : 1 / 0 / 4
  /github/workspace/igs/test-fsh/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh : 0 / 1 / 1
- /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel : 2 / 0 / 1
- /github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment : 0 / 4 / 3
+ /github/workspace/igs/test-fsh/fsh-generated/resources/Patient-janniceSoreng : 0 / 3 / 4
+ /github/workspace/igs/test-fsh/fsh-generated/resources/PlanDefinition-planDefinisjonEksempel : 2 / 0 / 1
+ /github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Appointment : 0 / 3 / 3
  /github/workspace/igs/test-fsh/fsh-generated/resources/StructureDefinition-derived-Person : 0 / 1 / 3
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PlanDefinition/PlanDefinisjonEksempel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/janniceSoreng.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PlanDefinition/planDefinisjonEksempel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8432 could not be resolved
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7617 could not be resolved
@@ -20,18 +23,29 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Appointment-derivedAppointmentExample.json ==
+INFORMATION: Appointment/derivedAppointmentExample: Appointment.appointmentType.coding[1]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.7617' is unknown so the code cannot be validated
+INFORMATION: Appointment/derivedAppointmentExample: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/test/StructureDefinition/derived-Appointment|0.0.5
+INFORMATION: Appointment/derivedAppointmentExample: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/test/StructureDefinition/derived-Appointment|0.0.5
+ERROR: Appointment/derivedAppointmentExample: Appointment.appointmentType: Appointment.appointmentType.coding:omsorgsNiva: minimum required = 1, but only found 0 (from http://hl7.no/test/StructureDefinition/derived-Appointment|0.0.5)
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.test-fsh.json ==
 WARNING: ImplementationGuide/hl7.fhir.no.test-fsh: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
-== fsh-generated/resources/PlanDefinition-PlanDefinisjonEksempel.json ==
-ERROR: PlanDefinition/PlanDefinisjonEksempel: PlanDefinition.goal[0].description.coding[0]: Wrong Display Name 'Blood glucose normal (finding)' for http://snomed.info/sct#166921001 - should be one of 5 choices: 'Blood glucose normal', 'Normoglycemic', 'Normoglycaemic', 'Blood glucose within reference range' or 'Blood glucose within reference range (finding)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#166921001'
-ERROR: PlanDefinition/PlanDefinisjonEksempel: PlanDefinition.action[0].action[0].code[0].coding[0]: Wrong Display Name 'Glucose measurement (procedure)' for http://snomed.info/sct#33747003 - should be one of 4 choices: 'Glucose measurement, blood', 'Blood sugar level', 'BS - Blood glucose level' or 'Glucose measurement, blood (procedure)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#33747003'
+== fsh-generated/resources/Patient-janniceSoreng.json ==
+INFORMATION: Patient/janniceSoreng: Patient.identifier[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Patient|2.0.10
+INFORMATION: Patient/janniceSoreng: Patient.address[0].extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.578.1.12.4.1.1.3402' is unknown so the code cannot be validated
+WARNING: Patient/janniceSoreng: Patient.address[0].extension[0].extension[0].value.ofType(Coding): ValueSet urn:oid:2.16.578.1.12.4.1.1.3402 not found
+INFORMATION: Patient/janniceSoreng: Patient.address[0].district.extension[0].value.ofType(Coding): Code System URI 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' is unknown so the code cannot be validated
+WARNING: Patient/janniceSoreng: Patient.address[0].district.extension[0].value.ofType(Coding): ValueSet https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle not found
+WARNING: Patient/janniceSoreng: Patient.contact[0].relationship[1]: No code provided, and a code should be provided from the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1)
+== fsh-generated/resources/PlanDefinition-planDefinisjonEksempel.json ==
+ERROR: PlanDefinition/planDefinisjonEksempel: PlanDefinition.goal[0].description.coding[0]: Wrong Display Name 'Blood glucose normal (finding)' for http://snomed.info/sct#166921001 - should be one of 5 choices: 'Blood glucose normal', 'Normoglycemic', 'Normoglycaemic', 'Blood glucose within reference range' or 'Blood glucose within reference range (finding)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#166921001'
+ERROR: PlanDefinition/planDefinisjonEksempel: PlanDefinition.action[0].action[0].code[0].coding[0]: Wrong Display Name 'Glucose measurement (procedure)' for http://snomed.info/sct#33747003 - should be one of 4 choices: 'Glucose measurement, blood', 'Blood sugar level', 'BS - Blood glucose level' or 'Glucose measurement, blood (procedure)' (for the language(s) '--') (from Tx-Server) for 'http://snomed.info/sct#33747003'
 == fsh-generated/resources/StructureDefinition-derived-Appointment.json ==
 INFORMATION: StructureDefinition/derived-Appointment: StructureDefinition.snapshot.element[47].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/derived-Appointment: StructureDefinition.snapshot.element[48].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/derived-Appointment: StructureDefinition.snapshot.element[22].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved
 WARNING: StructureDefinition/derived-Appointment: StructureDefinition.snapshot.element[23].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved
 WARNING: StructureDefinition/derived-Appointment: StructureDefinition.snapshot.element[24].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved
-WARNING: StructureDefinition.where(url = 'http://hl7.no/test/StructureDefinition/derived-Appointment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-derived-Person.json ==
 INFORMATION: StructureDefinition/derived-Person: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/derived-Person: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

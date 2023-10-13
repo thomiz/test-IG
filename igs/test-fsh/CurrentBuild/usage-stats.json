@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.no.test-fsh",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [],
@@ -19,11 +19,23 @@
     ]
   },
   "usage": {
+    "http://hl7.no/fhir/StructureDefinition/no-basis-address-official": [
+      "Patient.address"
+    ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-group": [
       "Appointment"
     ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-middlename": [
+      "Patient.contact.name"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode": [
+      "Patient.address.district"
+    ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-partof": [
       "Appointment"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation": [
+      "Patient.address"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service": [
       "Appointment"
@@ -45,6 +57,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-citizenship": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
