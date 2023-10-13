@@ -9,7 +9,7 @@ FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.test-fsh
 status: draft
-version: 0.0.4
+version: 0.0.5
 dependencies: 
     hl7.fhir.no.basis: 2.2.0-alpha
 releaseLabel: ci-build

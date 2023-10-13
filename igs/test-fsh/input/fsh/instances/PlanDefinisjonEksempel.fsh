@@ -1,6 +1,7 @@
 Instance: PlanDefinisjonEksempel
 InstanceOf: PlanDefinition
 Usage: #example
+* id = "planDefinisjonEksempel"
 * name = "PlanDefinitionExample"
 * title = "Overvåke blodsukker"
 * status = #active

@@ -10,4 +10,7 @@
 * Teste PlanDefinition ressurs eksempel.
 * Teste derived profile for no-basis-Person
 * Teste derived profile for no-basis-Appointment  
-* TODO: Instans eksempler som valideres mot de deriverte profilene
+* TODO: derived profile for no-basis-AppointmentResponse 
+* Instances that validates use of the derived profiles.  
+  * One instance exampler for derivedAppointment profile establisthed  
+  * TODO: One instance example for derivedAppointmentResponse profile  
