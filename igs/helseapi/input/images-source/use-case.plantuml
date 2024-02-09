@@ -1,0 +1,21 @@
+@startuml
+
+"Application" as app << FHIR client >>
+"External source" as extapp << FHIR server >>
+"search for information" as (soke) << FHIR search >> #lightblue 
+"indexing" as (indeksere)
+"read information" as (lese) << FHIR GET >> #lightblue
+"share information" as (dele) #lightblue
+
+'(soke) -down[hidden]- (lese)
+'(indeksere) -down[hidden]- (dele)
+
+app -up- soke
+app -right- lese
+indeksere -left- soke
+extapp -left- indeksere
+extapp -down- dele
+lese -right- dele
+indeksere .down. dele
+
+@enduml
