@@ -1,7 +1,7 @@
 # Script for building helseapi projects
 # Loads snapshot of no-basis manually (using install-no-basis-snapshots.sh script) into the virtual machine
 # Runs IG publisher using the manually installed no-basis package.
-name: helseapi-gh-pages-npm-docker-220a
+name: helseapi-gh-pages-npm-docker-220
 
 on:
   workflow_dispatch:
@@ -66,12 +66,12 @@ jobs:
       - name: make script executable
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: chmod 774 install-no-basis-220a-snapshots.sh
+          args: chmod 774 install-no-basis-220-snapshot.sh
 
       - name: run the docker script
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: ./install-no-basis-220a-snapshots.sh ${{ env.IG }}
+          args: ./install-no-basis-220-snapshot.sh ${{ env.IG }}
 
       #- name: make directories .fhir/packages
       #  uses: docker://hl7fhir/ig-publisher-base:latest
