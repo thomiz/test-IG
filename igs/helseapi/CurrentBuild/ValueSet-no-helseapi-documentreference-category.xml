@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-no-helseapi-documentreference-category.html"><code>http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category</code></a></li></ul></div>
   </text>
   <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category"/>
-  <version value="0.0.1-alpha"/>
+  <version value="1.0.0"/>
   <name value="NOHelseAPIDocumentReferenceCategory"/>
   <title value="NO HelseAPI Document Reference Category"/>
   <status value="active"/>
-  <date value="2024-02-09T18:08:56+00:00"/>
+  <date value="2024-02-09T18:43:52+00:00"/>
   <publisher value="Norsk Helsenett"/>
   <jurisdiction>
     <coding>

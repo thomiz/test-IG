@@ -1,6 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category,0.0.1-alpha,active,,NOHelseAPIDocumentReferenceCategory,NO HelseAPI Document Reference Category,"","StructureDefinition/no-helseapi-DocumentReference","Internal"
-http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type,0.0.1-alpha,active,,NOHelseAPIDocumentReferenceType,NO HelseAPI Document Reference Type,"","StructureDefinition/no-helseapi-DocumentReference","SCT"
+http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category,1.0.0,active,,NOHelseAPIDocumentReferenceCategory,NO HelseAPI Document Reference Category,"","StructureDefinition/no-helseapi-DocumentReference","Internal"
+http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type,1.0.0,active,,NOHelseAPIDocumentReferenceType,NO HelseAPI Document Reference Type,"","StructureDefinition/no-helseapi-DocumentReference","SCT"
 http://hl7.org/fhir/ValueSet/address-type,4.0.1,active,"2.16.840.1.113883.4.642.3.69",AddressType,AddressType,"The type of an address (physical / postal).","StructureDefinition/no-helseapi-Address","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/address-use,4.0.1,active,"2.16.840.1.113883.4.642.3.67",AddressUse,AddressUse,"The use of an address.","StructureDefinition/no-helseapi-Address","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.3.1",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","StructureDefinition/no-helseapi-Patient,StructureDefinition/no-helseapi-Practitioner","hl7.fhir.r4.core"

@@ -1,6 +1,6 @@
 {
-  "version" : "0.0.1-alpha",
+  "version" : "1.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240209180800",
+  "date" : "20240209184311",
   "name" : "hl7.fhir.no.helseapi.ig"
 }

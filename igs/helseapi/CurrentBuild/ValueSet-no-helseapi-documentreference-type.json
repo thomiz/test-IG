@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/371530004\">371530004</a></td><td>Clinical consultation report</td></tr><tr><td><a href=\"http://snomed.info/id/371529009\">371529009</a></td><td>History &amp; physical report</td></tr><tr><td><a href=\"http://snomed.info/id/373942005\">373942005</a></td><td>Discharge summary</td></tr><tr><td><a href=\"http://snomed.info/id/371525003\">371525003</a></td><td>Clinical procedure report</td></tr><tr><td><a href=\"http://snomed.info/id/371532007\">371532007</a></td><td>Progress report</td></tr><tr><td><a href=\"http://snomed.info/id/721927009\">721927009</a></td><td>Referral note</td></tr><tr><td><a href=\"http://snomed.info/id/371526002\">371526002</a></td><td>Operative report</td></tr><tr><td><a href=\"http://snomed.info/id/5531000179105\">5531000179105</a></td><td>Nursing report</td></tr></table></li></ul></div>"
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type",
-  "version" : "0.0.1-alpha",
+  "version" : "1.0.0",
   "name" : "NOHelseAPIDocumentReferenceType",
   "title" : "NO HelseAPI Document Reference Type",
   "status" : "active",
-  "date" : "2024-02-09T18:08:56+00:00",
+  "date" : "2024-02-09T18:43:52+00:00",
   "publisher" : "Norsk Helsenett",
   "jurisdiction" : [{
     "coding" : [{

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category",
-      "version" : "0.0.1-alpha",
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "NOHelseAPIDocumentReferenceCategoryCodes",
       "title" : "NO HelseAPI DocumentReferences Category Codes",

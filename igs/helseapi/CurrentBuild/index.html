@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.NO.HELSEAPI.IG\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/HL7-norway-logo.png" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img alt="Norway flag" src="assets/images/nor.svg" height="16" title="Norway"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HelseAPI - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.no/helseapi/ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-02-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">HelseAPI</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="helseapi">HelseAPI</h1>
+
+<p>Developing of standardized open APIs for Norwegian healthcare based on HL7 FHIR.</p>
+
+<h2 id="use-case">Use-case</h2>
+
+<p>The Information model described in the HelseAPI spec should be used for an  application to search for and read information about a patient from an external source. The external source plays the role of a FHIR Restful API server.</p>
+
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="268px" preserveAspectRatio="none" style="width:564px;height:268px;background:#FFFFFF;" version="1.1" viewBox="0 0 564 268" width="564px" zoomAndPan="magnify"><defs><filter height="300%" id="f25i1x8hhr0p9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><!--MD5=[4541fb81c80c07473fe4b07432ef0971]
+entity app--><ellipse cx="103" cy="191.5986" fill="#FEFECE" filter="url(#f25i1x8hhr0p9)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;" /><path d="M103,199.5986 L103,226.5986 M90,207.5986 L116,207.5986 M103,226.5986 L90,241.5986 M103,226.5986 L116,241.5986 " fill="none" filter="url(#f25i1x8hhr0p9)" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="65.5" y="260.0938">Application</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="90" x="58" y="178.7969">«FHIR client»</text><!--MD5=[c8db297f597058fb055ad4252fb35669]
+entity extapp--><ellipse cx="472" cy="33.5986" fill="#FEFECE" filter="url(#f25i1x8hhr0p9)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;" /><path d="M472,41.5986 L472,68.5986 M459,49.5986 L485,49.5986 M472,68.5986 L459,83.5986 M472,68.5986 L485,83.5986 " fill="none" filter="url(#f25i1x8hhr0p9)" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="418.5" y="102.0938">External source</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="96" x="424" y="20.7969">«FHIR server»</text><ellipse cx="117.1836" cy="56.5679" fill="#ADD8E6" filter="url(#f25i1x8hhr0p9)" rx="111.1836" ry="24.7661" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="100" x="59.895" y="50.901">«FHIR search»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="34.895" y="67.1979">search for information</text><ellipse cx="329.8472" cy="57.0232" fill="#FEFECE" filter="url(#f25i1x8hhr0p9)" rx="53.3472" ry="14.7215" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="297.8472" y="60.7708">indexing</text><ellipse cx="269.9267" cy="214.7307" fill="#ADD8E6" filter="url(#f25i1x8hhr0p9)" rx="86.4267" ry="24.9289" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="82" x="222.5119" y="209.4846">«FHIR GET»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="207.5119" y="225.7815">read information</text><ellipse cx="472.1107" cy="214.8239" fill="#ADD8E6" filter="url(#f25i1x8hhr0p9)" rx="80.6107" ry="18.5221" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="410.6726" y="218.1365">share information</text><!--MD5=[022219cb9cd58739ab9a97739f419bd8]
+link soke to app--><path d="M114.84,81.8318 C112.85,104.0518 109.83,137.7418 107.33,165.5118 " fill="none" id="soke-app" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[5896ecb763d27550c6b2a142269415de]
+link app to lese--><path d="M148.01,214.8018 C159.77,214.8018 171.52,214.8018 183.27,214.8018 " fill="none" id="app-lese" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[387f9185e074a78efcce249c17d2de81]
+link soke to indeksere--><path d="M228.08,56.8018 C244.13,56.8018 260.19,56.8018 276.25,56.8018 " fill="none" id="soke-indeksere" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[77879aa11f724fa0bea61ec12c890d25]
+link indeksere to extapp--><path d="M383.53,56.8018 C395.16,56.8018 406.8,56.8018 418.43,56.8018 " fill="none" id="indeksere-extapp" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[65949457ade5061492a05e4128f4523b]
+link extapp to dele--><path d="M472,105.8818 C472,136.5018 472,174.3618 472,196.1318 " fill="none" id="extapp-dele" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[c8dbc3a885088fa8d33e8d4cabc53ba0]
+link lese to dele--><path d="M356.8,214.8018 C368.35,214.8018 379.9,214.8018 391.45,214.8018 " fill="none" id="lese-dele" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[79b0169233677e16d5b6de4878b9c51b]
+link indeksere to dele--><path d="M342.11,71.1018 C367.73,99.2518 427.42,164.8318 456.09,196.3218 " fill="none" id="indeksere-dele" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /></g></svg></div>
+
+<h2 id="plan">Plan</h2>
+
+<p>Still in concept phase, the plan is to make a library of profiles based on ideas from Argonaut/US Core (minimum data set for query) and <a href="https://hl7.org/fhir/uv/ips/">International Patient Summary (IPS)</a> and <a href="http://build.fhir.org/ig/HL7/fhir-ipa/">International Patient Access (IPA)</a>.</p>
+
+<p>The profiles will make use of Norwegian <a href="https://github.com/HL7Norway/basisprofiler-r4">base profiles (no-basis) for R4</a>.</p>
+
+<p>The first use of HelseAPI profiles will be <a href="https://fredrikstadavisa.no/2017/06/10/vil-spare-tid-for-200-000-med-forerkort-levere-helseattest/">Førerrett-prosjektet (Norwegian)</a>, using <a href="http://hl7.org/fhir/smart-app-launch/">SMART App Launch Framework</a> with GP EHR for renewal of driver’s license.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.no.helseapi.ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 18:43+0000">2024-02-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

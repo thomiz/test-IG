@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category",
-      "version" : "0.0.1-alpha",
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "NOHelseAPIDocumentReferenceCategoryCodes",
       "title" : "NO HelseAPI DocumentReferences Category Codes",
@@ -129,9 +129,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-no-helseapi-documentreference-type.html" : "NO HelseAPI Document Reference Type",
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "ValueSet-no-helseapi-documentreference-type.html" : "NO HelseAPI Document Reference Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",

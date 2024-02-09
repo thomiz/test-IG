@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="27f432ca-846b-4c7d-8c7f-025cc1447082"/>
+  <id value="252c765a-01f1-425e-af51-065f86c99aff"/>
   <meta>
-    <lastUpdated value="2024-02-09T18:08:56.846+00:00"/>
+    <lastUpdated value="2024-02-09T18:43:52.632+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-no-helseapi-documentreference-category.html">codesystem NO HelseAPI DocumentReferences Category Codes v0.0.1-alpha (CodeSystem)</a>
+              <a href="CodeSystem-no-helseapi-documentreference-category.html">codesystem NO HelseAPI DocumentReferences Category Codes v1.0.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 1 concepts.</p>
             <table class="codes">
@@ -41,11 +41,11 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category"/>
-        <version value="0.0.1-alpha"/>
+        <version value="1.0.0"/>
         <name value="NOHelseAPIDocumentReferenceCategory"/>
         <title value="NO HelseAPI Document Reference Category"/>
         <status value="active"/>
-        <date value="2024-02-09T18:08:56+00:00"/>
+        <date value="2024-02-09T18:43:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -54,8 +54,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2232dc62-0c9d-4857-aff7-04d01a3ecd42"/>
-          <timestamp value="2024-02-09T18:09:14+00:00"/>
+          <identifier value="urn:uuid:742ef690-b44a-450d-872d-2ace13c3c56f"/>
+          <timestamp value="2024-02-09T18:44:11+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -72,7 +72,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category|0.0.1-alpha"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category"/>
@@ -172,11 +172,11 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type"/>
-        <version value="0.0.1-alpha"/>
+        <version value="1.0.0"/>
         <name value="NOHelseAPIDocumentReferenceType"/>
         <title value="NO HelseAPI Document Reference Type"/>
         <status value="active"/>
-        <date value="2024-02-09T18:08:56+00:00"/>
+        <date value="2024-02-09T18:43:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -185,8 +185,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bd2da1e5-25e3-44dd-ae4a-ca7bb1c9203f"/>
-          <timestamp value="2024-02-09T18:09:14+00:00"/>
+          <identifier value="urn:uuid:1c65f4ec-439b-43c0-99df-12e62f7d3f36"/>
+          <timestamp value="2024-02-09T18:44:11+00:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>

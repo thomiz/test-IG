@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HelseAPI</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig</pre></div>"
   },
   "url" : "http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig",
-  "version" : "0.0.1-alpha",
+  "version" : "1.0.0",
   "name" : "HelseAPI",
   "status" : "draft",
-  "date" : "2024-02-09T18:08:56+00:00",
+  "date" : "2024-02-09T18:43:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -44,7 +44,7 @@
     "id" : "hl7_fhir_no_basis",
     "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
     "packageId" : "hl7.fhir.no.basis",
-    "version" : "2.2.0-alpha"
+    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -249,17 +249,6 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -538,17 +527,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -686,7 +664,16 @@
       }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
-      "generation" : "html"
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
     },
     "parameter" : [{
       "code" : "path-resource",
