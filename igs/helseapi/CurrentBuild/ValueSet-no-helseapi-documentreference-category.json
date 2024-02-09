@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "no-helseapi-documentreference-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-no-helseapi-documentreference-category.html\"><code>http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category",
+  "version" : "0.0.1-alpha",
+  "name" : "NOHelseAPIDocumentReferenceCategory",
+  "title" : "NO HelseAPI Document Reference Category",
+  "status" : "active",
+  "date" : "2024-02-09T17:47:33+00:00",
+  "publisher" : "Norsk Helsenett",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category"
+    }]
+  }
+}

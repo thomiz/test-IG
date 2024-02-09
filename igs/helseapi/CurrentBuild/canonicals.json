@@ -1,0 +1,58 @@
+[
+  {
+    "id" : "no-helseapi-documentreference-category",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category",
+    "version" : "0.0.1-alpha",
+    "name" : "NOHelseAPIDocumentReferenceCategoryCodes"
+  },
+  {
+    "id" : "no-helseapi-Address",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-helseapi-Address",
+    "version" : "0.0.1-alpha",
+    "name" : "NoHelseAPIAddress"
+  },
+  {
+    "id" : "no-helseapi-DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-helseapi-DocumentReference",
+    "version" : "0.0.1-alpha",
+    "name" : "NoHelseAPIDocumentReference"
+  },
+  {
+    "id" : "no-helseapi-Patient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-helseapi-Patient",
+    "version" : "0.0.1-alpha",
+    "name" : "NoHelseAPIPatient"
+  },
+  {
+    "id" : "no-helseapi-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-helseapi-Practitioner",
+    "version" : "0.0.1-alpha",
+    "name" : "NoHelseAPIPractitioner"
+  },
+  {
+    "id" : "no-helseapi-documentreference-category",
+    "type" : "ValueSet",
+    "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category",
+    "version" : "0.0.1-alpha",
+    "name" : "NOHelseAPIDocumentReferenceCategory"
+  },
+  {
+    "id" : "no-helseapi-documentreference-type",
+    "type" : "ValueSet",
+    "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type",
+    "version" : "0.0.1-alpha",
+    "name" : "NOHelseAPIDocumentReferenceType"
+  },
+  {
+    "id" : "hl7.fhir.no.helseapi.ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig",
+    "version" : "0.0.1-alpha",
+    "name" : "HelseAPI"
+  }
+]

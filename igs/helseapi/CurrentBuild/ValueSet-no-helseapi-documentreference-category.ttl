@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/helseapi/ig/ValueSet/no-helseapi-documentreference-category> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "no-helseapi-documentreference-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-no-helseapi-documentreference-category.html\"><code>http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1-alpha"] ; # 
+  fhir:name [ fhir:v "NOHelseAPIDocumentReferenceCategory"] ; # 
+  fhir:title [ fhir:v "NO HelseAPI Document Reference Category"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-09T17:47:33+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Norsk Helsenett"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NO" ] ;
+       fhir:display [ fhir:v "Norway" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

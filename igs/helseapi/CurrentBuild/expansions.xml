@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="3102efbd-7acd-4532-bc98-3bccf1450aae"/>
+  <meta>
+    <lastUpdated value="2024-02-09T17:47:33.012+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-no-helseapi-documentreference-category.html">codesystem NO HelseAPI DocumentReferences Category Codes v0.0.1-alpha (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.no-fhir-CodeSystem-no-helseapi-documentreference-category-clinical-note"> </a>  
+                  <a href="CodeSystem-no-helseapi-documentreference-category.html#no-helseapi-documentreference-category-clinical-note">clinical-note</a>
+                </td>
+                <td>http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category</td>
+                <td>Clinical Note</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category"/>
+        <version value="0.0.1-alpha"/>
+        <name value="NOHelseAPIDocumentReferenceCategory"/>
+        <title value="NO HelseAPI Document Reference Category"/>
+        <status value="active"/>
+        <date value="2024-02-09T17:47:33+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:32add842-f36b-456b-9dcc-edf830760381"/>
+          <timestamp value="2024-02-09T17:47:51+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category|0.0.1-alpha"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category"/>
+            <code value="clinical-note"/>
+            <display value="Clinical Note"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Sep 2023</p>
+            <p>This value set contains 8 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371530004"> </a>  
+                  <a href="http://snomed.info/id/371530004">371530004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical consultation report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371529009"> </a>  
+                  <a href="http://snomed.info/id/371529009">371529009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>History &amp; physical report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373942005"> </a>  
+                  <a href="http://snomed.info/id/373942005">373942005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Discharge summary</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371525003"> </a>  
+                  <a href="http://snomed.info/id/371525003">371525003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical procedure report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371532007"> </a>  
+                  <a href="http://snomed.info/id/371532007">371532007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Progress report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-721927009"> </a>  
+                  <a href="http://snomed.info/id/721927009">721927009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Referral note (record artifact)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371526002"> </a>  
+                  <a href="http://snomed.info/id/371526002">371526002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Operative report</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-5531000179105"> </a>  
+                  <a href="http://snomed.info/id/5531000179105">5531000179105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nursing report (record artifact)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type"/>
+        <version value="0.0.1-alpha"/>
+        <name value="NOHelseAPIDocumentReferenceType"/>
+        <title value="NO HelseAPI Document Reference Type"/>
+        <status value="active"/>
+        <date value="2024-02-09T17:47:33+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1a734d76-3914-4293-871c-83c8a4313d5f"/>
+          <timestamp value="2024-02-09T17:47:51+00:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371530004"/>
+            <display value="Clinical consultation report"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371529009"/>
+            <display value="History &amp; physical report"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373942005"/>
+            <display value="Discharge summary"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371525003"/>
+            <display value="Clinical procedure report"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371532007"/>
+            <display value="Progress report"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721927009"/>
+            <display value="Referral note (record artifact)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371526002"/>
+            <display value="Operative report"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5531000179105"/>
+            <display value="Nursing report (record artifact)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

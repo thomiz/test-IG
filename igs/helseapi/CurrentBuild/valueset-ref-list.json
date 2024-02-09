@@ -1,0 +1,30 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category",
+      "version" : "0.0.1-alpha",
+      "status" : "active",
+      "name" : "NOHelseAPIDocumentReferenceCategory",
+      "title" : "NO HelseAPI Document Reference Category",
+      "description" : null,
+      "systems" : [
+        "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-no-helseapi-DocumentReference.html" : "NoHelseAPIDocumentReference"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type",
+      "version" : "0.0.1-alpha",
+      "status" : "active",
+      "name" : "NOHelseAPIDocumentReferenceType",
+      "title" : "NO HelseAPI Document Reference Type",
+      "description" : null,
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-no-helseapi-DocumentReference.html" : "NoHelseAPIDocumentReference"
+    }
+  ]
+}

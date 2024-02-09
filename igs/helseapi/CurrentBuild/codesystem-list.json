@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category",
+      "version" : "0.0.1-alpha",
+      "status" : "active",
+      "name" : "NOHelseAPIDocumentReferenceCategoryCodes",
+      "title" : "NO HelseAPI DocumentReferences Category Codes",
+      "description" : "The NO HelseAPI DocumentReferences Category Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources."
+    }
+  ]
+}

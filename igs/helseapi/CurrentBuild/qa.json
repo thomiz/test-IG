@@ -1,0 +1,16 @@
+{
+  "url" : "http://hl7.no/helseapi/ig/ImplementationGuide/hl7.fhir.no.helseapi.ig",
+  "name" : "HelseAPI",
+  "title" : null,
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "hl7.fhir.no.helseapi.ig",
+  "ig-ver" : "0.0.1-alpha",
+  "date" : "Fri, 09 Feb, 2024 17:47:33 +0000",
+  "errs" : 24,
+  "warnings" : 19,
+  "hints" : 13,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1750392552
+}

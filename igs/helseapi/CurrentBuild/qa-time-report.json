@@ -1,0 +1,409 @@
+{
+  "date" : "Fri, 09 Feb, 2024 17:47:33 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.helseapi.ig.json",
+      "size" : 2674,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 55
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 457
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 84
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 102
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 199,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-no-helseapi-documentreference-category.json",
+      "size" : 644,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 371
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 1494
+        }
+      ]
+    },
+    {
+      "name" : "input/profiles/no-helseapi-Address.structuredefinition-profile.xml",
+      "size" : 33408,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 37,
+          "length" : 119
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 120
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 59
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 73
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 239
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 194
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 976
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 199,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/profiles/no-helseapi-DocumentReference.structuredefinition-profile.xml",
+      "size" : 130301,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 37,
+          "length" : 296
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 386
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 122
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 175
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 365
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 359
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 979
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 199,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/profiles/no-helseapi-Patient.structuredefinition-profile.xml",
+      "size" : 236009,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 37,
+          "length" : 410
+        },
+        {
+          "activity" : "load",
+          "start" : 39,
+          "length" : 521
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 385
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 307
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 594
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 632
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 1303
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 199,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "input/profiles/no-helseapi-Practitioner.structuredefinition-profile.xml",
+      "size" : 205287,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 349
+        },
+        {
+          "activity" : "load",
+          "start" : 39,
+          "length" : 262
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 317
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 260
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 615
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 476
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 1184
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 199,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/no-helseapi-documentreference-category.valueset.xml",
+      "size" : 688,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 67
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 3527
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 194,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/no-helseapi-documentreference-type.valueset.xml",
+      "size" : 1563,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 128
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 106
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 83
+        }
+      ]
+    }
+  ]
+}

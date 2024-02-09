@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-helseapi-documentreference-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/371530004">371530004</a></td><td>Clinical consultation report</td></tr><tr><td><a href="http://snomed.info/id/371529009">371529009</a></td><td>History &amp; physical report</td></tr><tr><td><a href="http://snomed.info/id/373942005">373942005</a></td><td>Discharge summary</td></tr><tr><td><a href="http://snomed.info/id/371525003">371525003</a></td><td>Clinical procedure report</td></tr><tr><td><a href="http://snomed.info/id/371532007">371532007</a></td><td>Progress report</td></tr><tr><td><a href="http://snomed.info/id/721927009">721927009</a></td><td>Referral note</td></tr><tr><td><a href="http://snomed.info/id/371526002">371526002</a></td><td>Operative report</td></tr><tr><td><a href="http://snomed.info/id/5531000179105">5531000179105</a></td><td>Nursing report</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type"/>
+  <version value="0.0.1-alpha"/>
+  <name value="NOHelseAPIDocumentReferenceType"/>
+  <title value="NO HelseAPI Document Reference Type"/>
+  <status value="active"/>
+  <date value="2024-02-09T17:47:33+00:00"/>
+  <publisher value="Norsk Helsenett"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="371530004"/>
+        <display value="Clinical consultation report"/>
+      </concept>
+      <concept>
+        <code value="371529009"/>
+        <display value="History &amp; physical report"/>
+      </concept>
+      <concept>
+        <code value="373942005"/>
+        <display value="Discharge summary"/>
+      </concept>
+      <concept>
+        <code value="371525003"/>
+        <display value="Clinical procedure report"/>
+      </concept>
+      <concept>
+        <code value="371532007"/>
+        <display value="Progress report"/>
+      </concept>
+      <concept>
+        <code value="721927009"/>
+        <display value="Referral note"/>
+      </concept>
+      <concept>
+        <code value="371526002"/>
+        <display value="Operative report"/>
+      </concept>
+      <concept>
+        <code value="5531000179105"/>
+        <display value="Nursing report"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

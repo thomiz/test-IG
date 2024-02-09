@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category,0.0.1-alpha,active,,NOHelseAPIDocumentReferenceCategory,NO HelseAPI Document Reference Category,"","StructureDefinition/no-helseapi-DocumentReference","Internal"
+http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type,0.0.1-alpha,active,,NOHelseAPIDocumentReferenceType,NO HelseAPI Document Reference Type,"","StructureDefinition/no-helseapi-DocumentReference","SCT"

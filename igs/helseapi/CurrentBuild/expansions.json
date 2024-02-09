@@ -1,0 +1,151 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "3102efbd-7acd-4532-bc98-3bccf1450aae",
+  "meta" : {
+    "lastUpdated" : "2024-02-09T17:47:33.012+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-no-helseapi-documentreference-category.html\">codesystem NO HelseAPI DocumentReferences Category Codes v0.0.1-alpha (CodeSystem)</a></p><p>This value set contains 1 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.no-fhir-CodeSystem-no-helseapi-documentreference-category-clinical-note\"> </a>\u00a0\u00a0<a href=\"CodeSystem-no-helseapi-documentreference-category.html#no-helseapi-documentreference-category-clinical-note\">clinical-note</a></td><td>http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category</td><td>Clinical Note</td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-category",
+      "version" : "0.0.1-alpha",
+      "name" : "NOHelseAPIDocumentReferenceCategory",
+      "title" : "NO HelseAPI Document Reference Category",
+      "status" : "active",
+      "date" : "2024-02-09T17:47:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:32add842-f36b-456b-9dcc-edf830760381",
+        "timestamp" : "2024-02-09T17:47:51+00:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category|0.0.1-alpha"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.no/fhir/CodeSystem/no-helseapi-documentreference-category",
+          "code" : "clinical-note",
+          "display" : "Clinical Note"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Sep 2023</p><p>This value set contains 8 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371530004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371530004\">371530004</a></td><td>http://snomed.info/sct</td><td>Clinical consultation report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371529009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371529009\">371529009</a></td><td>http://snomed.info/sct</td><td>History &amp; physical report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373942005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/373942005\">373942005</a></td><td>http://snomed.info/sct</td><td>Discharge summary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371525003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371525003\">371525003</a></td><td>http://snomed.info/sct</td><td>Clinical procedure report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371532007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371532007\">371532007</a></td><td>http://snomed.info/sct</td><td>Progress report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-721927009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/721927009\">721927009</a></td><td>http://snomed.info/sct</td><td>Referral note (record artifact)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371526002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371526002\">371526002</a></td><td>http://snomed.info/sct</td><td>Operative report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5531000179105\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5531000179105\">5531000179105</a></td><td>http://snomed.info/sct</td><td>Nursing report (record artifact)</td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ValueSet/no-helseapi-documentreference-type",
+      "version" : "0.0.1-alpha",
+      "name" : "NOHelseAPIDocumentReferenceType",
+      "title" : "NO HelseAPI Document Reference Type",
+      "status" : "active",
+      "date" : "2024-02-09T17:47:33+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1a734d76-3914-4293-871c-83c8a4313d5f",
+        "timestamp" : "2024-02-09T17:47:51+00:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371530004",
+          "display" : "Clinical consultation report"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "371529009",
+          "display" : "History & physical report"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373942005",
+          "display" : "Discharge summary"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "371525003",
+          "display" : "Clinical procedure report"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "371532007",
+          "display" : "Progress report"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "721927009",
+          "display" : "Referral note (record artifact)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "371526002",
+          "display" : "Operative report"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "5531000179105",
+          "display" : "Nursing report (record artifact)"
+        }]
+      }
+    }
+  }]
+}
