@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3102efbd-7acd-4532-bc98-3bccf1450aae",
+  "id" : "27f432ca-846b-4c7d-8c7f-025cc1447082",
   "meta" : {
-    "lastUpdated" : "2024-02-09T17:47:33.012+00:00"
+    "lastUpdated" : "2024-02-09T18:08:56.846+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "NOHelseAPIDocumentReferenceCategory",
       "title" : "NO HelseAPI Document Reference Category",
       "status" : "active",
-      "date" : "2024-02-09T17:47:33+00:00",
+      "date" : "2024-02-09T18:08:56+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:32add842-f36b-456b-9dcc-edf830760381",
-        "timestamp" : "2024-02-09T17:47:51+00:00",
+        "identifier" : "urn:uuid:2232dc62-0c9d-4857-aff7-04d01a3ecd42",
+        "timestamp" : "2024-02-09T18:09:14+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -68,7 +68,7 @@
       "name" : "NOHelseAPIDocumentReferenceType",
       "title" : "NO HelseAPI Document Reference Type",
       "status" : "active",
-      "date" : "2024-02-09T17:47:33+00:00",
+      "date" : "2024-02-09T18:08:56+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -77,8 +77,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1a734d76-3914-4293-871c-83c8a4313d5f",
-        "timestamp" : "2024-02-09T17:47:51+00:00",
+        "identifier" : "urn:uuid:bd2da1e5-25e3-44dd-ae4a-ca7bb1c9203f",
+        "timestamp" : "2024-02-09T18:09:14+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{

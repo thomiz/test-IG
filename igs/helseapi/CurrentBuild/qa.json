@@ -6,11 +6,11 @@
   "status" : "draft",
   "package-id" : "hl7.fhir.no.helseapi.ig",
   "ig-ver" : "0.0.1-alpha",
-  "date" : "Fri, 09 Feb, 2024 17:47:33 +0000",
-  "errs" : 24,
-  "warnings" : 19,
-  "hints" : 13,
+  "date" : "Fri, 09 Feb, 2024 18:08:56 +0000",
+  "errs" : 21,
+  "warnings" : 18,
+  "hints" : 1,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1750392552
+  "maxMemory" : 1744943040
 }

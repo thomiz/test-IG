@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NOHelseAPIDocumentReferenceCategory"] ; # 
   fhir:title [ fhir:v "NO HelseAPI Document Reference Category"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-02-09T17:47:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-09T18:08:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Norsk Helsenett"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

@@ -66,8 +66,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient",
-      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner"
+      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner",
+      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -165,8 +165,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient",
-      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner"
+      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner",
+      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -180,8 +180,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient",
-      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner"
+      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner",
+      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -195,9 +195,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient",
+      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner",
       "StructureDefinition-no-helseapi-DocumentReference.html" : "NoHelseAPIDocumentReference",
-      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner"
+      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -256,8 +256,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient",
-      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner"
+      "StructureDefinition-no-helseapi-Practitioner.html" : "NoHelseAPIPractitioner",
+      "StructureDefinition-no-helseapi-Patient.html" : "NoHelseAPIPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
